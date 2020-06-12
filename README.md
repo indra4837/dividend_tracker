@@ -1,16 +1,16 @@
-<H1>Monthly Expenses Tracker</H1>
+<H1>Dividend Tracker</H1>
 <body>
-    <H2>Incoming/Outgoing transactions</H2>
+    <H2>Checks all dividend payout from yahoo.finance</H2>
     <ul>
-        <li>Tabulates all incoming/outgoing and transaction dates from both OCBC and DBS</li>
-        <li>Labels each transaction in categories provided</li>
+        <li>Tabulates all dividend payout in .csv file</li>
     </ul>
-    <H2>Analysis of transactions</H2>
+    <H2>Calculates total dividend</H2>
     <ul>
-        <li>Checks if spending in any categories are above monthly budgets</li>
+        <li>Checks currency and do necessary conversion using FCSAPI</li>
+        <li>Append total dividend (SGD) in .csv file</li>
     </ul>
-    <H2>Update User</H2>
+    <H2>Updates Google Spreadsheet (database)</H2>
     <ul>
-        <li>Updates user via SMS/Telegram bot of the monthly stats</li>
+        <li>Pushes all new dividend payout and append to spreadsheet</li>
     </ul>
 </body>
