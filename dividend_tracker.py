@@ -39,6 +39,9 @@ def last_tracked_date() -> dict:
 
     :return: dict of stock labels and the last tracked date for dividend payout
     """
+
+    # TODO: use pointers(?) to update last_tracked_date dynamically after push_to_sheets.get_new_data() is updated
+
     tracked_date = {}
     stock_data = key_stock_labels()
     for k, v in stock_data.items():

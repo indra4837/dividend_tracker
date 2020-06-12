@@ -11,6 +11,8 @@ def get_new_data() -> pd.DataFrame:
     :return: new DataFrame to push to GSheets
     """
 
+    # TODO: create subset of dataframe to push to Gsheets
+
     stock_labels = key_stock_labels()
     tracked_date = last_tracked_date()
 
@@ -36,6 +38,9 @@ def push_sheets() -> None:
     """ Reads csv file into pandas DataFrame and uploads into Google Sheets.
     Appends data to last row of sheets.
     """
+
+    # TODO: accept argument of type DataFrame based on get_new_data() to push to Gsheets
+
     json_file = f"{os.getcwd()}\\file.json"
     gc = pygsheets.authorize(service_account_file=json_file)
     stock_labels = key_stock_labels()
